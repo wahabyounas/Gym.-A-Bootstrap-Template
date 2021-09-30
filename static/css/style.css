@@ -1,0 +1,949 @@
+/*1.  Pre-loader
+2.  Default-css
+3.  Navbar
+4.  Modal
+5.  Main-banner 
+6.  Welcome-section
+7.  Project-section
+8.  About-section
+9.  Experts-section
+10. Blogs-section
+11. Counter-section
+12. Testimonials-section
+13. CLients-section
+14. Blogs-page
+15. Contact-page
+16. Subscription-section
+17. Footer-area */
+
+
+
+
+/*======================================
+ ============== preloader =============
+ ======================================== */
+ .loader-wrap {
+  position: fixed;
+  z-index: 999999;
+  background:#000000;
+  width: 100%;
+  height: 100%;
+}
+.loader{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader:before{
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  opacity: 0.1;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  animation: shadow .5s linear infinite;
+}
+.loader:after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  background:#4e4848;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: loading .5s linear infinite;
+}
+@-webkit-keyframes loading{
+  17% {
+      border-bottom-right-radius: 3px;
+  }
+  25% {
+      transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+      transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+  }
+  75% {
+      transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+      transform: translateY(0) rotate(90deg);
+  }
+}
+@keyframes loading{
+  17% {
+      border-bottom-right-radius: 3px;
+  }
+  25% {
+      transform: translateY(9px) rotate(22.5deg);
+  }
+  50% {
+      transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+  }
+  75% {
+      transform: translateY(9px) rotate(67.5deg);
+  }
+  100% {
+      transform: translateY(0) rotate(90deg);
+  }
+}
+@-webkit-keyframes shadow{
+  0%,
+  100% {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(1.2, 1);
+  }
+}
+@keyframes shadow{
+  0%,
+  100% {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(1.2, 1);
+  }
+}
+/*======================================
+ ============== Default CSS =============
+ ======================================== */
+ html{
+    scroll-behavior: smooth;
+}
+ body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Poppins,sans-serif;
+  font-size: 14px;
+  position: relative;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section{
+  padding:100px 0;
+  position: relative;
+  overflow: hidden;
+}
+a{
+  color: #767676;
+  outline: 0 none;
+  text-decoration: none;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+img{
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.gym h1, .gym h2, .gym h3, .gym h4, .gym h5, .gym h6 {
+  text-transform: capitalize;
+}
+.p-a50 {
+  padding: 50px;
+}
+.text-white {
+  color: #FFF;
+}
+.fw-300{
+  font-weight: 300;
+}
+.mbt-20{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.mbt-15{
+  margin-top: 15px;
+  margin-bottom: 15x;
+}
+.mbt-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.m-tb20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mt-50{
+  margin-top: 50px;
+}
+.fw-600{
+  font-weight: 600 !important;
+}
+.p-lr20{
+ padding-left: 20px;
+ padding-right: 20px;
+}
+.plr-80
+{
+padding-left: 80px;
+padding-right: 80px;
+}
+.font-36{
+  font-size: 36px;
+}
+.align-middle{
+  align-items: center;
+}
+.bg-white{
+  background-color: #fff;
+}
+.bg-black{
+  background-color: black;
+}
+.bg-black-1{
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.bg-grey{
+  background-color: #f6f7f8;
+}
+.pt-90{
+  padding-top: 90px;
+}
+.plr-10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.pbt-20{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.opacity-04{
+  opacity: 0.5;
+}
+.opacity-08{
+  opacity: 0.7;
+}
+.opacity-09{
+  opacity: 0.9;
+}
+.align{
+  align-self: center;
+}
+.bold{
+  font-weight: bold;
+}
+.relative{
+  position: relative;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: black;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 17px !important;
+  height: 8px !important;
+  margin: 10px 7px !important;
+  display: block;
+  background: transparent;
+  border-radius: 0px !important;
+  transition: opacity .2s ease;
+  border: 1px solid !important;
+}
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background:transparent;
+	border: none;
+	padding: 0 40px 0 45px;
+	margin: 0;
+	font-family: inherit;
+  letter-spacing: 4px;
+	position: relative;
+	display: inline-block;
+}
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.button--pan {
+  font-family: Montserrat;
+	border: 1px solid white;
+	overflow: hidden;
+	color: #fff;
+  margin-bottom: 20px;
+  border-radius: 0%;
+}
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+}
+.button--pan span {
+	position: relative;
+	mix-blend-mode: difference;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.button--pan::before {
+	content: '';
+	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.button--pan:hover::before {
+  color:black;
+  background:white;
+	transform: translate3d(0,-100%,0);
+}
+.btn:hover{
+  color: black;
+}
+/*======================================
+ ============== sticky =============
+ ======================================== */
+ .sticky{
+  border-radius: 0!important;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.938)!important;
+  border-bottom: 1px solid white;
+  z-index: 12;
+  box-shadow: 0 0 10px 0 #c9cbd870;
+  margin-top: 0;
+  transition: 0.4s all ease;
+}
+/*======================================
+ ============== navbar =============
+ ======================================== */
+ header{
+  background-color: black;
+}
+.navbar{
+  padding: 1rem 1rem;
+}
+.navbar.sticky {
+  padding: 1rem 20rem;
+}
+button.navbar-toggler span{
+  color: white !important;
+}
+ header nav ul li a{
+  font-size: 15px;
+  color:white !important;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+  padding: 15px !important; 
+  text-transform: uppercase;
+  transition: all .4s ease-in-out;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+/*======================================
+  ============== modal =============
+  ======================================== */
+  /*======================================
+ ============== main-banner =============
+ ======================================== */
+.carousel-caption {
+  text-align: center;
+  top: 30%;
+}
+.carousel-caption h1{
+  font-style: italic;
+  font-size: calc(22px + (60 - 22) * ((100vw - 300px) / (1920 - 300)));
+  color: #fff;
+  font-weight: 200;
+  margin-top: -5px;
+  letter-spacing: 2px;
+  margin-bottom: -10px;
+  margin-bottom: 45px;
+}
+.carousel-caption h1 .bold-text{
+  font-weight: 600;
+}
+.carousel-caption .sub-heading{
+  padding: 0 85px;
+  margin-bottom: 35px;
+}
+.carousel-caption .sub-heading p{
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 300;
+  padding: 0px 140px;
+  margin-top: -7px;
+  margin-bottom: -4px;
+  line-height: 1.8;
+}
+.banner-btn ul li{
+  padding-right: 35px;
+}
+.banner-btn ul li:last-child{
+  padding:0%;
+}
+.banner-btn ul li a{
+  background-color: transparent;
+}
+.banner-btn .btn{
+  padding: 14px 35px !important;
+}
+.btn-default{
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 500;
+  border: 2px solid;
+  text-transform: capitalize;
+  border-radius: 0px;
+  color: #fff !important;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+.btn-default:hover{
+  background-color: white;
+  color: #000 !important;
+}
+/*======================================
+ ============== welcome =============
+ ======================================== */
+/*======================================
+ ============== designs =============
+ ======================================== */
+/*======================================
+ ============== About-us =============
+ ======================================== */
+.gym .about-img{
+  position: relative;
+  margin: 35px 0px;
+ }
+.gym .about-img .border-around .bg-black{
+  width: 60%;
+ }
+.gym .border-around .bg-black{
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  background-color: #000;
+  z-index: -1;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+ }
+.gym .about-img .format-img{
+  width: 65%;
+ }
+ .gym .about-img .border-around .bg-black:before, .gym .about-img .border-around .bg-black:after {
+  width: 184px !important;
+  height: 184px !important;
+}
+.gym .border-around .bg-black:before, .gym .border-around .bg-black:after {
+  content: '';
+  position: absolute;
+  width: 125px;
+  height: 125px;
+}
+.gym .border-around .bg-black:before{
+  top: -35px;
+  left: -35px;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+}
+.gym .border-around .bg-black:after{
+  bottom: -35px;
+  right: -35px;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+.gym h6{
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.small-text{
+  margin-bottom: 0%;
+}
+.gym .border-before{
+  margin-bottom: 20px;
+  margin-left: 62px;
+}
+.border-before span{
+  display: inline-block;
+  position: relative;
+}
+.small-text h6 span::before{
+  content: "";
+  position: absolute;
+  border-top: 2px solid black;
+  width: 46px;
+  transform: translate(0, -50%);
+  top: 50%;
+  right: 100%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.head-text h3{
+  font-weight: 600;
+  font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1920 - 300)));
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.sub-text p{
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: justify;
+}
+.primary-btn{
+  background-color: black;
+  color: white;
+  transition: .3s all ease;
+}
+.gym .btn{
+  padding: 14px 35px;
+}
+.primary-btn:hover{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+/*======================================
+ ============== Schedule =============
+ ======================================== */
+.bg-schedule{
+  background: url("/static/images/bg2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 1150px;
+  background-color: black;
+}
+.bg-schedule .about-content{
+  padding: 0px 50px;
+}
+.title{
+  margin-bottom: 50px;
+}
+.gym h2{
+  font-size: calc(20px + (40 - 20) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: -5px;
+  margin-bottom: -5px;
+  line-height: 0.8;
+}
+#schedule .small-text h6 span::before{
+  border-top: 2px solid white;
+}
+.icon-collection .about-icon{
+  margin: 0 18px;
+  background-color: transparent;
+  border: 1px solid white;
+  background-color: black;
+  filter: none;
+  transition:.5s all ease;
+}
+.icon-collection .about-icon:first-child{
+  padding-left: 0;
+  margin-left: 0%;
+}
+.icon-collection .about-icon{
+  padding:18px 20px !important;
+}
+.icon-collection .about-icon .s-icons{
+  filter: brightness(0) invert(1);
+}
+.icon-collection .about-icon:hover{
+  background-color: white;
+}
+.icon-collection .about-icon:hover .s-icons{
+  filter:unset;
+}
+/*======================================
+ ============== choose-workout =============
+ ========================================*/
+ .gym h4{
+  font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: -8px;
+  margin-bottom: -8px;
+ }
+ .bg-schedule .about-content .small-text span::before{
+   color: #FFF !important;
+ }
+/*======================================
+ ============== counter =============
+ ======================================== */
+#Counter{
+  background:url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.counter-img img{
+  height: 40px;
+}
+.gym h2{
+  font-size: calc(25px + (40 - 20) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: -5px;
+  margin-bottom: -5px;
+  line-height: 0.9;
+}
+.gym h5{
+  font-size: calc(25px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+  line-height: 1;
+}
+/*======================================
+ ============== trainers =============
+ ======================================== */
+ .trainer-info h3{
+  font-size: 20px;
+  font-weight: 600 !important;
+  list-style: 0.8;
+  letter-spacing: 1px;
+}
+.social-icons ul li{
+  padding: 0px 5px;
+}
+.social-icons ul li a i {
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+  line-height: 25px;
+  background-color: #000;
+  border-radius: 50px;
+  color: #fff;
+  transition: all 800ms;
+  border: 2px solid #fff;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, #fff 50%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 90px 180px;
+}
+.main-title{
+  margin-bottom: 50px;
+}
+.gym .trainers-slider.owl-carousel .owl-item.active.center .item img{
+  transition: 1s;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px 0 #000;
+  margin-bottom: 15px;
+}
+.gym .trainers-slider.owl-carousel .owl-item.active.center{
+  z-index: 1;
+  transition: .5s all ease;
+}
+.gym .trainers-slider.owl-carousel .owl-item .trainer-info{
+  display: none;
+  transition: .5s all ease;
+}
+.gym .trainers-slider.owl-carousel .owl-item.active.center .item .trainer-info{
+  display: block;
+}
+.gym .trainers-slider.owl-carousel .owl-item.active.center .trainers-info{
+  padding-top: 50px;
+}
+.gym .trainers-slider.owl-carousel .owl-stage-outer
+{
+  padding-top: 45px;
+}
+/*======================================
+ ============== testimonials =============
+ ======================================== */
+#testimonial{
+  background-image: url("/static/images/testimonial-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#testimonial .small-text h6 span::before{
+  border-top: 2px solid white;
+}
+.testimonials-content .testimonials-image img{
+  width: auto !important;
+}
+.testimonials-content .testimonials-info{
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+.testimonial-para{
+  font-weight: 200;
+  letter-spacing: 0;
+  font-size: 138%;
+}
+.testimonials-info h5{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.gym h6{
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+/*======================================
+ ============== Pricing =============
+ ======================================== */
+.pricing .price-container{
+  margin: 5px 5px 2px 5px;
+  filter: drop-shadow(0 0 6px #efecec);
+  border-radius:0px;
+  border: none;
+  overflow: hidden;
+  transition: .5s all;
+}
+.pricing .price-container .price-feature-container{
+  padding: 50px 0 ;
+}
+.feature-text i{
+  font-size: 40px;
+}
+.pricing .price-container:hover.feature-text{
+  color: white !important;
+}
+.feature-text hr{
+  margin-bottom: 2rem;
+  margin-top: 1.6rem;
+  margin-right: 100px;
+  margin-left: 100px;
+  border-top: 1px solid #f4f4f4;
+}
+.pricing-feature h5{
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+}
+.pricing-feature .price-feature{
+  color: #888787;
+  margin-bottom: 20px;
+}
+.active .pricing-feature .price-feature{
+  color: white;
+}
+.active .feature-text hr{
+  border-top: 1px solid white;
+}
+.price-value{
+  margin-bottom: 30px;
+}
+.price-value .price{
+  font-size: initial;
+  font-weight: 500;
+}
+.price-value .price .large{
+   font-size: 55px;
+   font-weight: 400;
+}
+.pricing .active{
+  background-image: url("../images/price.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.1);
+}
+.pricing .price-container:hover{
+  background-image: url("../images/price.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+.pricing .price-container:hover .pricing-feature .price-feature{
+  color: white;
+}
+.pricing .price-container:hover .price-value{
+  color: white !important;
+}
+.pricing .price-container:hover .feature-text{
+  color: white;
+}
+/*======================================
+ ============== BMI_calculator =============
+ ======================================== */
+.bg-cal-bmi{
+  background-image: url("../images/calculat-bg.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+ }
+ #bmi-cal .small-text h6 span::before{
+  border-top: 2px solid white;
+}
+.link-horizontal ul li{
+  padding-right: 35px;
+}
+.gym input {
+  margin-right: 12px;
+  padding: 22px;
+}
+.about-icon:last-child {
+  margin-right: 0;
+}
+.link-horizontal ul li:last-child {
+  padding-right: 0;
+}
+.about-icon {
+  margin-bottom: 0;
+}
+.gym .calculate-bmi{
+  background: rgba(255,255,255,0.1);
+  width: 100%;
+  overflow: hidden;
+}
+.gym .calculate-bmi tr td {
+  font-size: 16px;
+  color: #fff;
+  padding: 25px 0 25px;
+  font-weight: 500;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: all 0.2s;
+}
+.gym .calculate-bmi tr td:hover {
+  background: rgba(255,255,255,0.2);
+}
+/*======================================
+ ============== clients =============
+ ======================================== */
+#clients{
+  padding: 50px 0px;
+}
+.clients .item img{
+  width: 70%;
+  margin: 0 auto;
+}
+/*======================================
+ ============== footer =============
+ ======================================== */
+ footer {
+  padding: 100px 0;
+}
+ footer.footer2.gym {
+  background-color: #000;
+}
+footer .footer-title.mobile-title {
+  display: none;
+}
+footer .logo-sec .footer-para {
+  margin-bottom: 30px;
+}
+footer .logo-sec .footer-para .para-address {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+.gym h6 {
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-contant h5{
+  font-size: calc(20px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  line-height: 1;
+}
+footer .logo-sec .footer-social .footer-social-list:first-child {
+  padding-left: 0;
+}
+footer .logo-sec .footer-social .footer-social-list {
+  padding: 0 15px;
+}
+footer .logo-sec .footer-social .footer-social-list a {
+  color: white;
+}
+footer .logo-sec .footer-logo {
+  margin-bottom: 55px;
+}
+footer i.fa {
+  font-size: 16px;
+}
+footer.gym h5 {
+  color: #fff;
+  padding-bottom: 55px;
+}
+footer .footer-headings {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+footer .footer-lists.op-text li {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+footer .footer-lists li {
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+footer .footer-lists li a {
+  font-weight: 300;
+  color: #fff;
+  line-height: initial;
+  opacity: 0.7;
+}
+footer .footer-lists li a:hover{
+ color: #FFF;
+ text-decoration: none;
+ opacity: 1 !important;
+ transition: .3s all ease;
+}
+footer .link-btns {
+  margin-bottom: -10px;
+}
+footer .link-btns ul li.buttons {
+  padding: 8px 20px;
+  border: 1px solid rgba(255,255,255,0.34);
+  border-radius: 5px;
+  opacity: 0.8;
+  margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+footer .link-btns ul li.buttons a {
+  text-transform: capitalize;
+  color: white;
+  transition: .3s all ease;
+  opacity: .7;
+}
+footer .link-btns ul li.buttons a:hover{
+  color: #FFF !important;
+  text-decoration: none;
+  opacity: 1;
+}
+.footer-bottom{
+  background: #0c0c0c;
+  padding: 18px 0;
+}
+.link-horizontal ul li{
+  padding-right: 10px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+.copyright-text{
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1.2;
+  color: white;
+  text-align: right;
+  opacity: .7;
+  transition: .3s all ease;
+}
+.copyright-text:hover{
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+}
+.copyright-text .fa-heart{
+  color: #fb3b64;
+}
