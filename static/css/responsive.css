@@ -7,6 +7,13 @@
     .slider-area{
         height: 50vh;
     }
+    .navbar-toggler-icon i{
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+    .navbar.sticky {
+        padding: 1rem 1rem;
+    }
     .carousel-item img{
         height: 50vh;
     }
