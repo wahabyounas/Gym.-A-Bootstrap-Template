@@ -525,7 +525,7 @@ button.navbar-toggler span{
  ============== Schedule =============
  ======================================== */
 .bg-schedule{
-  background: url("/static/images/bg2.png");
+  background: url("../images/bg2.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: 1150px;
@@ -662,7 +662,7 @@ button.navbar-toggler span{
  ============== testimonials =============
  ======================================== */
 #testimonial{
-  background-image: url("/static/images/testimonial-bg.jpg");
+  background-image: url("../images/testimonial-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
