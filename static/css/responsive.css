@@ -7,6 +7,9 @@
     .slider-area{
         height: 50vh;
     }
+    .about-content{
+        margin-top: 20px;
+    }
     .navbar-toggler-icon i{
         padding-top: 8px;
         padding-left: 8px;
