@@ -823,7 +823,78 @@ button.navbar-toggler span{
   margin: 0 auto;
 }
 /*======================================
- ============== contact-page-banner =============
+ ============== blogs-page =============
+ ======================================== */
+ .blogs-section{
+   padding: 20px 0px 70px 0px;
+ }
+ .blogs-section .container{
+   margin-bottom: -30px;
+ }
+ .blogs-section .blog-agency{
+   margin-bottom: 30px;
+ }
+ .blogs-section .blog-agency .blog-contain{
+  border: 1px solid #f3f3f3;
+  background: #fff;
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px #eee);
+  transition: all 0.3s;
+ }
+ .blogs-section .blog-agency .blog-contain .image-container .blogs-info{
+   padding: 28px;
+ }
+ .blogs-info .date-time{
+   align-items: center;
+ }
+ .blogs-info .date-time .d-flex i{
+  font-size: 16px;
+  margin-right: 10px;
+  color: #595959;
+}
+.blogs-info .blog-heading{
+  color: #000;
+  text-transform: none;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 0
+}
+.blogs-section h6{
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  margin-bottom: -5px;
+  font-weight: 400;
+  line-height: normal;;
+}
+.blogs-section h5 {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1920 - 300)));
+  letter-spacing: 0;
+  padding-top: 5px;
+}
+.a-dec-none{
+  text-decoration: none !important;
+  color: #000;
+}
+.blogs-info p{
+  margin-bottom: unset;
+  font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 400
+}
+.blogs-section .para-2{
+  padding: 0;
+  letter-spacing: 0;
+  color: #9c9c9c;
+}
+.blogs-info .blogs-btn{
+  margin-bottom: -5px;
+}
+.blogs-info .blogs-btn a{
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 400;
+}
+/*======================================
+ ============== contact-page =============
  ======================================== */
  #contact-ban{
   background-image: url("../images/testimonial-bg.jpg");
