@@ -376,6 +376,7 @@ button.navbar-toggler span{
   border: 1px solid #f3f3f3;
   border-radius: 0%;
   padding: 0%;
+  top: 137%;
 }
 .dropdown-divider {
   margin:0;
@@ -1202,6 +1203,16 @@ button.navbar-toggler span{
   border-color:#f1f1f1;
   outline: 0;
   box-shadow:none;
+}
+textarea:focus-visible{
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    background-color: rgb(19, 17, 17) !important;
+    -webkit-box-shadow: 0 0 0 50px white inset;
 }
 /*======================================
  ============== footer =============
