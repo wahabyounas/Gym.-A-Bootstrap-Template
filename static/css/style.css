@@ -153,7 +153,6 @@ h2{
 }
 p{
   font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
-  color: #000;
   font-weight: 400;
   margin-top: -7px;
   margin-bottom: -4px;
@@ -371,6 +370,20 @@ button.navbar-toggler span{
   transition: all .4s ease-in-out;
   font-weight: 500;
   letter-spacing: 0;
+}
+.dropdown-menu{
+  background-color: black !important;
+  border: 1px solid #f3f3f3;
+  border-radius: 0%;
+  padding: 0%;
+}
+.dropdown-divider {
+  margin:0;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #16181b !important;
+  text-decoration: none;
+  background-color: #e9ecef;
 }
 /*======================================
   ============== modal =============
@@ -1076,6 +1089,23 @@ button.navbar-toggler span{
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+.blog-sidebar .sidebar-content .newsletter .form-group {
+  position: relative;
+}
+.blog-sidebar .sidebar-content .newsletter .form-group i {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 15px;
+}
+.blog-sidebar .insta li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.blog-sidebar .form-control:focus{
+  color: #4e4848 !important;
 }
 /*======================================
  ============== contact-page =============
