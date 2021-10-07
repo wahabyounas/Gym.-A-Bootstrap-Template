@@ -554,10 +554,10 @@ button.navbar-toggler span{
  ============== Schedule =============
  ======================================== */
 .bg-schedule{
-  background: url("../images/bg2.png");
-  background-position: right;
+  background: url("../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: 1150px;
+  background-size: cover;
   background-color: black;
 }
 .bg-schedule .about-content{
@@ -614,8 +614,8 @@ button.navbar-toggler span{
  ============== counter =============
  ======================================== */
 #Counter{
-  background:url("../images/bg.jpg");
-  background-repeat: no-repeat;
+  background:url("../images/contact-bg.jpg");
+  background-size: cover;
   background-position: center center;
 }
 .counter-img img{
@@ -691,9 +691,9 @@ button.navbar-toggler span{
  ============== testimonials =============
  ======================================== */
 #testimonial{
-  background-image: url("../images/testimonial-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../images/banner/portrait-youg-afro-american-sports-man-doing-pushup-exercise.jpg");
+  background-size: 2350px;
+  background-position:left top;
   background-repeat: no-repeat;
 }
 #testimonial .small-text h6 span::before{
@@ -799,8 +799,8 @@ button.navbar-toggler span{
  ============== BMI_calculator =============
  ======================================== */
 .bg-cal-bmi{
-  background-image: url("../images/calculat-bg.jpg");
-  background-position: right;
+  background-image: url("../images/banner/banner-bgi.png");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
@@ -825,7 +825,7 @@ button.navbar-toggler span{
   margin-bottom: 0;
 }
 .gym .calculate-bmi{
-  background: rgba(255,255,255,0.1);
+  background: rgb(255 255 255 / 13%);
   width: 100%;
   overflow: hidden;
 }
