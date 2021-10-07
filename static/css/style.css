@@ -614,7 +614,7 @@ button.navbar-toggler span{
  ============== counter =============
  ======================================== */
 #Counter{
-  background:url("../images/contact-bg.jpg");
+  background:url("../images/counter/counter-bg.png");
   background-size: cover;
   background-position: center center;
 }
