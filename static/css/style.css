@@ -846,6 +846,7 @@ button.navbar-toggler span{
  ======================================== */
 #gym-clients{
   padding: 50px 0px;
+  border-top: 1px solid #f3f3f3;
 }
 .clients .item img{
   width: 55%;
@@ -1110,6 +1111,9 @@ button.navbar-toggler span{
 }
 .blog-sidebar .form-control:focus{
   color: #4e4848 !important;
+}
+#blogs .load .btn-default{
+  font-size:calc(12px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));;
 }
 /*======================================
  ============== contact-page =============
