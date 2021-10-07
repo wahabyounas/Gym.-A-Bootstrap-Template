@@ -44,9 +44,14 @@
     .gym .btn {
         padding: 12px 25px;
     }
+    #contact .bg-black-transparent form {
+        padding: 30px;
+    } 
 }
 @media (max-width:767px){
-    
+    #contact .bg-black-transparent form {
+        padding: 30px;
+    } 
 }
 @media (min-width: 576px){
     .section{

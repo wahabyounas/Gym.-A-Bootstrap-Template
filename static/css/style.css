@@ -854,6 +854,9 @@ button.navbar-toggler span{
 /*======================================
  ============== blogs-page =============
  ======================================== */
+ #blogs{
+   padding: 100px 0px;
+ }
  .blogs-section{
    padding: 20px 0px 70px 0px;
  }
@@ -1212,7 +1215,6 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
     background-color: rgb(19, 17, 17) !important;
-    -webkit-box-shadow: 0 0 0 50px white inset;
 }
 /*======================================
  ============== footer =============
