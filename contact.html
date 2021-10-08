@@ -135,39 +135,63 @@
           </div>
           <div class="col-md-6 pl-0 pr-0 ">
             <div class="bg-black-transparent">
-              <form>
+              <form class="needs-validation" novalidate>
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="name">Name *</label>
-                      <input type="text" class="form-control" id="name">
+                      <input type="text" name="username" required class="form-control" id="name">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Invalid!
+                      </div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="phone">Phone *</label>
-                      <input type="text" class="form-control" id="phone">
+                      <input type="text" name="phone" required class="form-control" id="phone">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="email">Email *</label>
-                      <input type="Email" class="form-control" id="email">
+                      <input type="Email" name="email" required class="form-control" id="email">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Invalid!
+                      </div>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label for="subject">Subject</label>
-                      <input type="text" class="form-control" id="subject">
+                      <input type="text" name="subject" required class="form-control" id="subject">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Invalid!
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="message">Message *</label>
-                  <input type="text" id="message" class="form-control">
+                  <input type="text" id="message" name="message" required class="form-control">
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Invalid!
+                  </div>
                 </div>
                 <div class="cal-btn">
-                  <a href="#" class="btn btn-default">Send</a>
+                  <button class="btn btn-default" type="submit">Send</button>
                 </div>
               </form>
             </div>
