@@ -340,7 +340,7 @@ padding-right: 80px;
   background-color: rgba(0, 0, 0, 0.938)!important;
   /* border-bottom: 1px solid white; */
   z-index: 12;
-  box-shadow: 0 0 10px 0 #fafbffd2;
+  box-shadow: 0 0 3px 0 #fafbffd2;
   margin-top: 0;
   transition: 0.4s all ease;
 }
@@ -354,7 +354,7 @@ padding-right: 80px;
   padding: 1rem 1rem;
 }
 .navbar.sticky {
-  padding: 1rem 3rem;
+  padding: .5rem 3rem;
 }
 button.navbar-toggler span{
   color: white !important;
@@ -553,11 +553,11 @@ button.navbar-toggler span{
 /*======================================
  ============== Schedule =============
  ======================================== */
-.bg-schedule{
-  background: url("../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
-  background-position: top;
+ .bg-schedule {
+  background: url(../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+  /* background-position: unset; */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 2300px;
   background-color: black;
 }
 .bg-schedule .about-content{
