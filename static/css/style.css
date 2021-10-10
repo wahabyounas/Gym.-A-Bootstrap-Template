@@ -16,9 +16,6 @@
 16. Subscription-section
 17. Footer-area */
 
-
-
-
 /*======================================
  ============== preloader =============
  ======================================== */
@@ -350,12 +347,6 @@ padding-right: 80px;
  header{
   background-color: black;
 }
-.navbar{
-  padding: 1rem 1rem;
-}
-.navbar.sticky {
-  padding: .5rem 3rem;
-}
 button.navbar-toggler span{
   color: white !important;
 }
@@ -394,7 +385,7 @@ button.navbar-toggler span{
  ======================================== */
 .carousel-caption {
   text-align: center;
-  top: 30%;
+  top: 25%;
 }
 .carousel-caption h1{
   font-style: italic;
@@ -560,6 +551,7 @@ button.navbar-toggler span{
 }
 .gym .bullets-points .bullet-1 i{
   font-size: 12px;
+  margin-top: 3px;
 }
 .gym .bullets-points .bullet-1 p{
   font-size: calc(14px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));

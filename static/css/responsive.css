@@ -11,15 +11,17 @@
     padding: 70px 0;
 }
 }
-@media (max-width: 767px){
-.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
-    padding-right: 0;
-    padding-left: 0;
+@media (max-width: 991px){
+.fixed-top{
     background: black;
-}}
+}
+.carousel-caption h1{
+    margin-bottom: 30px;
+}
+}
 @media (max-width:991px){
     .slider-area{
-        height: 50vh;
+        height: 60vh;
     }
     .about-content{
         margin-top: 20px;
@@ -28,17 +30,17 @@
         padding-top: 8px;
         padding-left: 8px;
     }
-    .navbar.sticky {
-        padding: 1rem 1rem;
+    .carousel-item{
+        top: 50px;
     }
     .carousel-item img{
-        height: 50vh;
+        height: 60vh;
     }
     .carousel-caption .sub-heading p{
         padding: 0px 20px;
     }
     .carousel-caption{
-        top: 20%;
+        top:10%;
     }
     .carousel-caption .sub-heading {
         padding: 0 35px;
@@ -71,6 +73,10 @@
     section{
         padding:50px 0px;
     }
+    .carousel-caption {
+        text-align: center;
+        top: 15%;
+    }
     .bg-schedule .about-content{
         padding: 0px 10px !important;
     }
@@ -85,6 +91,9 @@
     }
     .carousel-caption .sub-heading{
         display: none;
+    }
+    .pricing .active{
+        transform: scale(1);
     }
     .banner-btn .btn {
         padding: 10px 15px !important;
