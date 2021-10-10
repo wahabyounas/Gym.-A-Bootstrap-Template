@@ -152,7 +152,7 @@ h2{
   color: #000;
 }
 p{
-  font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(14px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 400;
   margin-top: -7px;
   margin-bottom: -4px;
@@ -376,7 +376,7 @@ button.navbar-toggler span{
   border: 1px solid #f3f3f3;
   border-radius: 0%;
   padding: 0%;
-  top: 137%;
+  top: 120%;
 }
 .dropdown-divider {
   margin:0;
@@ -529,13 +529,14 @@ button.navbar-toggler span{
   font-weight: 600;
   font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1920 - 300)));
   letter-spacing: 1px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .sub-text p{
-  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(14px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
   letter-spacing: 0;
   line-height: 25px;
   text-align: justify;
+  margin-bottom: 30px !important;
 }
 .primary-btn{
   background-color: black;
@@ -550,6 +551,10 @@ button.navbar-toggler span{
   background-color: white;
   color: black;
 }
+.gym .bullets-points{
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
 .gym .bullets-points .bullet-1{
   margin-bottom: 10px !important;
 }
@@ -557,8 +562,8 @@ button.navbar-toggler span{
   font-size: 12px;
 }
 .gym .bullets-points .bullet-1 p{
-  font-size: 15px;
-  letter-spacing: 1px;
+  font-size: calc(14px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  letter-spacing: 0px;
   line-height: 30px;
 }
 /*======================================
@@ -625,22 +630,25 @@ button.navbar-toggler span{
  ============== counter =============
  ======================================== */
 #Counter{
-  background:url("../images/counter/counter-bg.png");
+  background: url(../images/counter/counter-bg.png);
   background-size: cover;
   background-position: center center;
+  background-attachment: fixed;
 }
 .counter-img img{
-  height: 40px;
+  height: 60px;
+  margin-bottom: 25px !important;
 }
 .gym h2{
-  font-size: calc(25px + (40 - 20) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(30px + (40 - 20) * ((100vw - 300px) / (1920 - 300)));
   margin-top: -5px;
   margin-bottom: -5px;
   line-height: 0.9;
 }
 .gym h5{
-  font-size: calc(25px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(35px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
   line-height: 1;
+  font-weight: 600;
 }
 /*======================================
  ============== trainers =============
@@ -1235,7 +1243,7 @@ input:-webkit-autofill:active {
  ============== footer =============
  ======================================== */
  footer {
-  padding: 100px 0;
+  padding: 80px 0 60px 0;
 }
  footer.footer2.gym {
   background-color: #000;
@@ -1244,7 +1252,7 @@ footer .footer-title.mobile-title {
   display: none;
 }
 footer .logo-sec .footer-para {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 footer .logo-sec .footer-para .para-address {
   margin-bottom: 10px;
@@ -1269,18 +1277,20 @@ footer .logo-sec .footer-social .footer-social-list a {
   color: white;
 }
 footer .logo-sec .footer-logo {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 footer i.fa {
   font-size: 16px;
 }
 footer.gym h5 {
   color: #fff;
-  padding-bottom: 55px;
+  padding-bottom: 35px;
 }
 footer .footer-headings {
   text-transform: uppercase;
   color: #fff;
+  margin-top: 10px;
+  margin-bottom: auto;
   font-weight: 500;
 }
 footer .footer-lists.op-text li {
@@ -1329,7 +1339,7 @@ footer .link-btns ul li.buttons a:hover{
   opacity: 1;
 }
 .footer-bottom{
-  background: #0c0c0c;
+  background: #0c0c0cf7;
   padding: 18px 0;
 }
 .link-horizontal ul li{
