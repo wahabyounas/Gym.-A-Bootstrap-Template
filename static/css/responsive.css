@@ -77,7 +77,7 @@
         padding:50px 0px;
     }
     .pl{
-        padding-left: 0%;
+        padding-left: 0% !important;
     }
     .carousel-caption {
         text-align: center;
