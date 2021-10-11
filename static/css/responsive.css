@@ -131,6 +131,9 @@
     footer .logo-sec .footer-logo {
         margin-bottom: 20px;
     }
+    footer .footer-headings{
+        margin-top: auto;
+    }
     footer.gym h5 {
         padding-bottom: 20px;
     }
