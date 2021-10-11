@@ -15,6 +15,10 @@
 .fixed-top{
     background: black;
 }
+.navbar-collapse{
+    max-height: 280px;
+    overflow-y: auto;
+}
 .carousel-caption h1{
     margin-bottom: 30px;
 }
