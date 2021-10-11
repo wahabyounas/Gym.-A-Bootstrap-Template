@@ -61,13 +61,16 @@ window.addEventListener('load', function() {
           );
         });
       },false);
-// Welcome-corusel
+// Our-Schedule-corusel
 $('#schedule-carousel').owlCarousel({
 	    loop:true,
 	    nav:false,
 		dots:false,
 		autoplay:true,
-		smartSpeed: 3000,
+		smartSpeed: 2000,
+		animateOut: 'fadeOut',
+		// animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
 	    autoplayHoverPause:true,
 	    responsive:{
 	        0:{
