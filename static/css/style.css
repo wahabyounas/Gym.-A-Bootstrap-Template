@@ -380,9 +380,16 @@ button.navbar-toggler span{
 /*======================================
  ============== main-banner =============
  ======================================== */
-.carousel-caption {
+.slider-area{
+  height: 100vh;
+}
+.carousel-item img{
+  height: 100vh;
+}
+ .carousel-caption {
   text-align: center;
   top: 25%;
+  vertical-align: center !important;
 }
 .carousel-caption h1{
   font-style: italic;
@@ -1332,7 +1339,7 @@ footer .link-btns ul li.buttons a:hover{
   background: #0c0c0cf7;
   padding: 18px 0;
 }
-.link-horizontal ul li{
+.footer-bottom .link-horizontal ul li{
   padding-right: 10px;
   padding-left: 15px;
   padding-bottom: 5px;

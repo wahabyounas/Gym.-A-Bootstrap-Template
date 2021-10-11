@@ -38,7 +38,7 @@
         padding-left: 8px;
     }
     .carousel-item{
-        top: 50px;
+        top: 65px;
     }
     .carousel-item img{
         height: auto;
@@ -47,7 +47,7 @@
         padding: 0px 20px;
     }
     .carousel-caption{
-        top:10%;
+        top:20%;
     }
     .carousel-caption .sub-heading {
         padding: 0 35px;
@@ -63,6 +63,11 @@
         padding: 30px;
     } 
 }
+@media (max-width:860px){
+    .carousel-caption{
+        top:13%;
+    }
+}
 @media (max-width:767px){
     #contact .bg-black-transparent form {
         padding: 30px;
@@ -70,6 +75,12 @@
     .carousel-caption .sub-heading{
         display: none;
     } 
+    .slider-area{
+        height: 70vh;
+    }
+    .carousel-item img{
+        height: 70vh;
+    }
 }
 @media (max-width: 576px){
     .section{
@@ -97,10 +108,11 @@
         padding: 10px 10px !important;
     }
     .slider-area{
-        height: 50vh;
+        height: 60vh;
     }
     .carousel-item img{
-        height: 50vh;
+        height: 60vh;
+        width: 0% !important;
     }
     .pricing .active{
         transform: scale(1);
