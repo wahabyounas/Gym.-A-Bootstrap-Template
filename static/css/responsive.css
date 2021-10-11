@@ -22,14 +22,7 @@
 @media (max-width:991px){
     .slider-area{
         height: auto;
-    }.bg-schedule {
-        background: url(../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
-        background-position: revert;
-        /* background-repeat: no-repeat; */
-        background-size: cover;
-        background-color: black;
     }
-
     .about-content{
         margin-top: 20px;
     }

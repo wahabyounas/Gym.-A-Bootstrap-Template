@@ -347,6 +347,9 @@ padding-right: 80px;
  header{
   background-color: black;
 }
+.navbar-brand{
+  width: 150px;
+}
 button.navbar-toggler span{
   color: white !important;
 }
@@ -561,10 +564,10 @@ button.navbar-toggler span{
  ============== Our-Schedule =============
  ======================================== */
  .bg-schedule {
-  background: url(../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+  background: url(../images/banner/9.png);
   /* background-position: unset; */
   background-repeat: no-repeat;
-  background-size: 2300px;
+  background-size: cover;
   background-color: black;
 }
 .bg-schedule .about-content{
