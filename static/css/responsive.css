@@ -21,7 +21,7 @@
 }
 @media (max-width:991px){
     .slider-area{
-        height: 60vh;
+        height: auto;
     }
     .about-content{
         margin-top: 20px;
@@ -34,7 +34,7 @@
         top: 50px;
     }
     .carousel-item img{
-        height: 60vh;
+        height: auto;
     }
     .carousel-caption .sub-heading p{
         padding: 0px 20px;
@@ -59,6 +59,9 @@
 @media (max-width:767px){
     #contact .bg-black-transparent form {
         padding: 30px;
+    }
+    .carousel-caption .sub-heading{
+        display: none;
     } 
 }
 @media (max-width: 576px){
@@ -73,6 +76,9 @@
     section{
         padding:50px 0px;
     }
+    .pl{
+        padding-left: 0%;
+    }
     .carousel-caption {
         text-align: center;
         top: 15%;
@@ -84,13 +90,10 @@
         padding: 10px 10px !important;
     }
     .slider-area{
-        height: 50vh;
+        height: auto
     }
     .carousel-item img{
-        height: 50vh;
-    }
-    .carousel-caption .sub-heading{
-        display: none;
+        height: auto;
     }
     .pricing .active{
         transform: scale(1);

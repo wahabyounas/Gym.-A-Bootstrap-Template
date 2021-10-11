@@ -1,19 +1,19 @@
 /*1.  Pre-loader
 2.  Default-css
 3.  Navbar
-4.  Modal
-5.  Main-banner 
-6.  Welcome-section
-7.  Project-section
-8.  About-section
-9.  Experts-section
-10. Blogs-section
-11. Counter-section
-12. Testimonials-section
-13. CLients-section
+4.  Main-banner
+5.  About-us 
+6.  Our-schedule
+7.  Choose-Workout
+8.  Counter
+9.  Our-trainer
+10. Testimonials
+11. Pricing
+12. Bgmi-calculator
+13. Clients
 14. Blogs-page
-15. Contact-page
-16. Subscription-section
+15. Blos-details-page
+16. contatct-page
 17. Footer-area */
 
 /*======================================
@@ -378,9 +378,6 @@ button.navbar-toggler span{
   background-color: #e9ecef;
 }
 /*======================================
-  ============== modal =============
-  ======================================== */
-  /*======================================
  ============== main-banner =============
  ======================================== */
 .carousel-caption {
@@ -439,21 +436,15 @@ button.navbar-toggler span{
   color: #000 !important;
 }
 /*======================================
- ============== welcome =============
- ======================================== */
-/*======================================
- ============== designs =============
- ======================================== */
-/*======================================
  ============== About-us =============
  ======================================== */
 .gym .about-img{
   position: relative;
   margin: 35px 0px;
- }
+}
 .gym .about-img .border-around .bg-black{
   width: 60%;
- }
+}
 .gym .border-around .bg-black{
   height: 100%;
   width: 80%;
@@ -463,10 +454,10 @@ button.navbar-toggler span{
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
- }
+}
 .gym .about-img .format-img{
   width: 65%;
- }
+}
  .gym .about-img .border-around .bg-black:before, .gym .about-img .border-around .bg-black:after {
   width: 184px !important;
   height: 184px !important;
@@ -554,12 +545,13 @@ button.navbar-toggler span{
   margin-top: 3px;
 }
 .gym .bullets-points .bullet-1 p{
-  font-size: calc(14px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
   letter-spacing: 0px;
+  font-weight: 500;
   line-height: 30px;
 }
 /*======================================
- ============== Schedule =============
+ ============== Our-Schedule =============
  ======================================== */
  .bg-schedule {
   background: url(../images/banner/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
@@ -643,7 +635,7 @@ button.navbar-toggler span{
   font-weight: 600;
 }
 /*======================================
- ============== trainers =============
+ ============== Our-trainers =============
  ======================================== */
  .trainer-info h3{
   font-size: 20px;
@@ -699,7 +691,7 @@ button.navbar-toggler span{
   padding-top: 45px;
 }
 /*======================================
- ============== testimonials =============
+ ============== Testimonials =============
  ======================================== */
 #testimonial{
   background-image: url("../images/banner/portrait-youg-afro-american-sports-man-doing-pushup-exercise.jpg");
@@ -829,6 +821,9 @@ button.navbar-toggler span{
 .about-icon:last-child {
   margin-right: 0;
 }
+.link-horizontal ul li:first-child{
+  padding-left: 0%;
+}
 .link-horizontal ul li:last-child {
   padding-right: 0;
 }
@@ -946,6 +941,9 @@ button.navbar-toggler span{
   font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 400;
 }
+/*======================================
+ ============== blog-detail-page =============
+ ======================================== */
 .blogs-detail .blog-detail-content .blogs-detail-font{
   margin-top: 15px;
   font-weight: 500;
