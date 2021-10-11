@@ -404,7 +404,7 @@ button.navbar-toggler span{
 .carousel-caption .sub-heading p{
   font-size: calc(13px + (16 - 13) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 300;
-  padding: 0px 140px;
+  padding: 0px 85px;
   margin-top: -7px;
   margin-bottom: -4px;
   line-height: 1.8;
