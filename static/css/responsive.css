@@ -110,6 +110,9 @@
     #Counter {
         background-size: cover;    
     }
+    .blogs-section .blog-agency .blog-contain .image-container .blogs-info {
+        padding: 15px;
+    }
     footer .logo-sec .footer-logo {
         margin-bottom: 20px;
     }
