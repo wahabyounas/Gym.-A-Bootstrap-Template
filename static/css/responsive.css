@@ -101,6 +101,9 @@
     .banner-btn .btn {
         padding: 10px 15px !important;
     }
+    .testimonial-para {
+        font-size: 105%;
+    }
     .banner-btn ul li {
         padding-right: 0px;
     }
