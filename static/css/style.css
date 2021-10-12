@@ -857,6 +857,10 @@ button.navbar-toggler span{
 .gym .calculate-bmi tr td:hover {
   background: rgba(255,255,255,0.2);
 }
+#btn{
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
 /*======================================
  ============== clients =============
  ======================================== */
