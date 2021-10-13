@@ -861,6 +861,10 @@ button.navbar-toggler span{
   margin-top: 15px;
   margin-bottom: 25px;
 }
+#result{
+  font-size: calc(15px + (18 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 600;
+}
 /*======================================
  ============== clients =============
  ======================================== */

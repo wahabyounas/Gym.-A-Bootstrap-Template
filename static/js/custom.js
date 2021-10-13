@@ -198,7 +198,7 @@ $('#trainers-carousel').owlCarousel({
 	})
 //calculate-bmi
 window.onload = () => {
-	let button = document.querySelector("#calc-btn");
+	let button = document.querySelector("#btn");
 
 	// Function for calculating BMI
 	button.addEventListener("click", calculateBMI);
@@ -235,14 +235,14 @@ function calculateBMI() {
 
 		// Dividing as per the bmi conditions
 		if (bmi < 18.6) result.innerHTML =
-			`Under Weight : <span>${bmi}</span>`;
+			` BMI: <span>${bmi}</span>`;
 
 		else if (bmi >= 18.6 && bmi < 24.9)
 			result.innerHTML =
-				`Normal : <span>${bmi}</span>`;
+				`BMI: <span>${bmi}</span>`;
 
 		else result.innerHTML =
-			`Over Weight : <span>${bmi}</span>`;
+			`BMI: <span>${bmi}</span>`;
 	}
 }
 
